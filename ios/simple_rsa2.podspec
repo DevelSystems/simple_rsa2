@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'simple_rsa2'
-  s.version          = '0.0.6'
+  s.version          = '0.0.7'
   s.summary          = 'A simple RSA plugin for Flutter'
   s.description      = <<-DESC
 A simple RSA plugin for Flutter.

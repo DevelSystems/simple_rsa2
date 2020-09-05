@@ -1,3 +1,6 @@
+## 0.0.7
+Fixed a bug that wouldn't let it build with Xcode.
+
 ## 0.0.6
 * We encountered an error with the iOS implementation when using xCode 11.5, we updated
 the depedency with SwiftyRSA to 1.6.0 version :)
