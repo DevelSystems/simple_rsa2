@@ -28,7 +28,8 @@ flutter:
   plugin:
     platforms:
       android:
-        androidPackage: com.develsystems.simple_rsa2
+        package: com.develsystems.simple_rsa2
+        pluginClass: SimpleRsa2Plugin
       ios:
         pluginClass: SimpleRsa2Plugin
 
