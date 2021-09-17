@@ -1,6 +1,6 @@
 name: simple_rsa2
 description: A new flutter plugin project.
-version: 0.0.7
+version: 1.0.0
 authors:
   - Creator Gian Marco Di Francesco <difrancescogianmarco@gmail.com>
   - Contributor Adlan Arif Zakaria <adlanarifzr@gmail.co>
@@ -8,7 +8,7 @@ authors:
 homepage: https://github.com/DevelSystems/simple_rsa2
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
