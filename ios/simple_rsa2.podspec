@@ -15,7 +15,7 @@ A simple RSA plugin for Flutter.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'SwiftyRSA', "~> 1.6.0"
+  s.dependency 'SwiftyRSA', "~> 1.7.0"
   s.platform = :ios, '11.0'
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
