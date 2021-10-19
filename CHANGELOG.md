@@ -1,3 +1,5 @@
+## 1.0.0
+Support null safety
 ## 0.0.7
 Fixed a bug that wouldn't let it build with Xcode.
 
