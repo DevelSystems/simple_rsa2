@@ -1,3 +1,6 @@
+## 1.0.1
+Upgrade to SwiftRSA 1.7.0
+
 ## 1.0.0
 Support null safety
 ## 0.0.7
