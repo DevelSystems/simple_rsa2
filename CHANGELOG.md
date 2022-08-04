@@ -1,3 +1,6 @@
+## 2.0.0
+Dart migrate to support sound null safety
+
 ## 1.0.2
 Upgrade to SwiftRSA 1.7.0
 
