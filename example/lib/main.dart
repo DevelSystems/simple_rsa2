@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-
-import 'package:flutter/services.dart';
 import 'package:simple_rsa2/simple_rsa2.dart';
-
 
 void main() => runApp(App());
 
@@ -23,7 +19,6 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> {
-
   final PUBLIC_KEY =
       "MIIBITANBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQBuAGGBgg9nuf6D2c5AIHc8" +
           "vZ6KoVwd0imeFVYbpMdgv4yYi5obtB/VYqLryLsucZLFeko+q1fi871ZzGjFtYXY" +
@@ -91,10 +86,10 @@ class HomeState extends State<Home> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   child:
-                  _stringEncoded.isEmpty ? Text("ENCODE") : Text("DECODE"),
-                  color: Colors.yellow,
+                      _stringEncoded.isEmpty ? Text("ENCODE") : Text("DECODE"),
+                  style: ElevatedButton.styleFrom(primary: Colors.yellow),
                   onPressed: () async {
                     String tmp = "";
                     try {
@@ -120,15 +115,17 @@ class HomeState extends State<Home> {
                     }
                   },
                 ),
-                RaisedButton(
+                ElevatedButton(
                     child: Text("DECODE"),
-                    color: Colors.red,
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.red,
+                    ),
                     onPressed: () async {
                       String tmp = "";
                       if (_stringEncoded.isNotEmpty) {
                         try {
                           tmp =
-                          await decryptString(_stringEncoded, PRIVATE_KEY);
+                              await decryptString(_stringEncoded, PRIVATE_KEY);
                           setState(() {
                             _stringEncoded = "";
                             myController.text = tmp;
@@ -138,9 +135,11 @@ class HomeState extends State<Home> {
                         }
                       }
                     }),
-                RaisedButton(
+                ElevatedButton(
                   child: Text("RESET"),
-                  color: Colors.blue,
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.blue,
+                  ),
                   onPressed: () {
                     setState(() {
                       _stringEncoded = "";
